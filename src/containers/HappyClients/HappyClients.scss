@@ -1,0 +1,46 @@
+.happy-clients {
+  &__right {
+    position: relative;
+    border: solid 1px black;
+    max-width: 345px;
+    max-height: 476px;
+    z-index: 0;
+  }
+
+  &__figure-semicircle {
+    display: block;
+    width: 500px;
+    height: 500px;
+    border: solid 1px orange;
+    clip-path: polygon(25% 0, 100% 0, 0 0, 0 0);
+    background:
+            linear-gradient(123.35deg, #D538CF 0%, rgba(235, 243, 208, 0) 18.4%),
+            radial-gradient(29.9% 70.94% at 44.25% 86.96%, #DC8DDC 0%, rgba(220, 141, 220, 0) 100%),
+            radial-gradient(33.83% 53.57% at 35.87% 100%, #DC8DDC 0%, rgba(220, 141, 220, 0) 100%),
+            radial-gradient(42.66% 49.72% at 45.56% 44.65%, #CBADEB 0%, rgba(194, 166, 241, 0) 100%),
+            linear-gradient(134.59deg, rgba(100, 61, 213, 0.6) 20.63%, rgba(119, 192, 235, 0.01) 47.84%),
+            linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, #C0A9F0 -1.04%, rgba(192, 169, 240, 0) 16.99%),
+            linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, #C0A9F0 38.5%, rgba(192, 169, 240, 0) 50.26%),
+            radial-gradient(40.75% 97.37% at 90.75% 40.15%, #F3476F 0%, #EA8ED0 34.46%, #F0BDD0 69.5%, rgba(255, 129, 38, 0) 100%),
+            #C2A6F1;
+    z-index: 1;
+
+  }
+
+  &__figure-square {
+    display: block;
+    width: 190px;
+    height: 190px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(28px);
+    border-radius: 22px;
+    z-index: 2;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}
