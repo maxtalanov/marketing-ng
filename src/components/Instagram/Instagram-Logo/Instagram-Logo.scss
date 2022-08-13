@@ -1,0 +1,12 @@
+.instagram-logo {
+  display: flex;
+  align-items: center;
+
+  &_type_media {
+    gap: 0 8px;
+  }
+
+  &_type_follower {
+    gap: 0 10px;
+  }
+}

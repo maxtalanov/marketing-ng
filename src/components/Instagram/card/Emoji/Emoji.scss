@@ -1,0 +1,15 @@
+.emoji {
+  width: 152px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 22px;
+  padding: 20px 24px;
+  background: #FFFFFF;
+  box-shadow: 0 35px 80px -14px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  &__ {
+    width: 32px;
+    height: 32px;
+  }
+}

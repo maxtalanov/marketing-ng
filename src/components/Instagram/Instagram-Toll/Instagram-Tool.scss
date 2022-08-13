@@ -1,0 +1,36 @@
+$pathIcon: '../../../assets/instagram/btn-icons';
+$download-dark: $pathIcon + '/download-dark.svg';
+$download-grey: $pathIcon + '/download-grey.svg';
+$layout-dark: $pathIcon + '/layout-dark.svg';
+$layout-grey: $pathIcon + '/layout-grey.svg';
+
+.inst-tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5px;
+
+  &__btn {
+    width: 34px;
+    height: 34px;
+    border: 0.9px solid #EEF0F2;
+    border-radius: 50%;
+    background: center no-repeat;
+
+    &_bg_layout-dark {
+      background-image: url($layout-dark);
+    }
+
+    &_bg_download-dark {
+     background-image: url($download-dark);
+    }
+
+    &_bg_layout-grey {
+      background-image: url($layout-grey);
+    }
+
+    &_bg_download-grey {
+      background-image: url($download-grey);
+    }
+  }
+}

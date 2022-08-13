@@ -1,0 +1,56 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 188px;
+  backdrop-filter: blur(80px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 30px 0 16px 0;
+
+  &__container-avatar {
+    position: absolute;
+    top: -12px;
+    right: -18px;
+  }
+
+  &__fullName {
+    max-width: 128px;
+    //font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.96);
+    margin-bottom: 26px;
+  }
+
+  &__growth-container {
+    background: #FBFBFB;
+    border-radius: 8px;
+    padding: 18px 32px 20px 32px;
+  }
+
+  &__growth-title {
+    //font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #404040;
+    margin-bottom: 5px;
+  }
+
+  &__subscriptions {
+    //font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FF4D4A;
+  }
+}

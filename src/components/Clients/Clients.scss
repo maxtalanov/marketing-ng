@@ -1,0 +1,13 @@
+.clients {
+  &__title {
+    margin: 0 0 65px 0;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 86px;
+  }
+}
