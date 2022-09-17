@@ -14,6 +14,7 @@ const Header: FC = () => {
       <div className={`${HEADER_CLASS}__container-bg`}>
         <div className={`${HEADER_CLASS}__bg-mask`}></div>
       </div>
+      
       <div className={`${HEADER_CLASS}__container-bar`}>
         <Logotype />
         <Navbar theme="white"/>
@@ -28,6 +29,7 @@ const Header: FC = () => {
           Automate the way you search through hashtags and suggested
           profiles to find results 100x faster.
         </p>
+        <button className={`${HEADER_CLASS}__bth`}>Request Demo</button>
       </div>
 
       <div className={`${HEADER_CLASS}__container-instagram`}>
