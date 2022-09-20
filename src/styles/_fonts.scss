@@ -17,9 +17,16 @@
 @font-face {
     font-family: Inter;
     font-weight: 400;
-    src: 
+    src:
         url(../fonts/Inter-Medium.woff) format('woff'),
         url(../fonts/Inter-Medium.woff2) format('woff2');
+}
+
+// Шрифт LATTO
+@font-face {
+    font-family: Latto;
+    font-weight: 700;
+    src: url(../fonts/Lato-Bold.woff) format('woff');
 }
 
 // Шрифт LEKTON
@@ -29,5 +36,5 @@
     font-weight: 700;
     src:
         url(../fonts/Lekton-Bold.woff2) format('woff2'),
-        url(../fonts/Lekton-Bold.woff) format('woff',)
+        url(../fonts/Lekton-Bold.woff) format('woff', )
 }
