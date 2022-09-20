@@ -11,7 +11,6 @@ import { SizesBtn, typeBtn } from "../../components/ui/Button/Button";
 const HEADER_CLASS: string = 'header';
 
 const Header: FC = () => {
-  console.log(SizesBtn.S)
 
   return (
     <header className={`${HEADER_CLASS}`}>
