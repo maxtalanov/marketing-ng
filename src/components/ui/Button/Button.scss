@@ -1,0 +1,42 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFAF9;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(35px);
+    border-radius: 21px;
+
+    &_theme_light {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(35px);
+        border-radius: 21px;
+    }
+
+    &_theme_dark-blue {
+        background: #231A36;
+        border-radius: 26px;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__header {
+        gap: 0 16px;
+    }
+
+    &__content {
+        gap: 0 30px;
+    }
+}
