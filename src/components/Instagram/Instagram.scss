@@ -1,0 +1,33 @@
+.instagram {
+    width: 720px;
+    min-height: 696px;
+    border: solid 1px red;
+
+    position: relative;
+
+    &__container {
+        position: absolute;
+
+        &_type_emoji {
+            top: 496px;
+            right: 180px;
+        }
+
+        &_type_media {
+            position: absolute;
+            top: 42px;
+            right: 80px;
+        }
+
+        &_type_follower {
+            top: 358px;
+            right: 0;
+        }
+
+        &_type_profile {
+            top: 14px;
+            left: 98px;
+        }
+    }
+
+}

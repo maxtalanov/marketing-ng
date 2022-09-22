@@ -1,4 +1,18 @@
 .navbar {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.94;
+
+  &__text_theme_grey {
+      color: #333333;
+  }
+
+  &__text_theme_white {
+    color:#FFFFFF;
+  }
 
   &__list{
     display: flex;
@@ -7,4 +21,11 @@
     gap: 0 35px;
   }
 
+  &__el {
+    cursor: pointer;
+    
+    &:hover {
+      opacity: 0.6;   
+    }
+  }
 }

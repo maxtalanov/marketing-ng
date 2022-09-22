@@ -1,7 +1,18 @@
 .clients {
+
   &__title {
     margin: 0 0 65px 0;
     text-transform: uppercase;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #B2B7BE;
+
   }
 
   &__container {
