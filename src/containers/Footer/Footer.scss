@@ -1,4 +1,4 @@
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +21,14 @@
   }
 
   &__copyright {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #959595;
+
     margin: 30px 0;
   }
 }
