@@ -12,7 +12,7 @@ const Footer:FC = () => {
     return(
         <footer className={`${FOOTER_CLASS}`}>
             <div className={`${FOOTER_CLASS}__container`}>
-                <Logotype />
+                <Logotype theme="#1A1A1A"/>
                 <Navbar />
                 <SocialNetwork arrIMG={socialLogos} />
             </div>
