@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 function App() {
 
     return (
-        <div className="App">
+        <div className="ng-marceting">
           <Header />
           <Footer />
         </div>
