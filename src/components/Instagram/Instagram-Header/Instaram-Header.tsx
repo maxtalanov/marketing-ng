@@ -17,10 +17,10 @@ const InstagramHeader: FC<InstagramHeaderProps> = ({type, title, modStyle}) => {
     return(
         <div className={`${instHEADER_CLASS}`}>
             { type === 'media' ? <InstagramLogo modStyle={type} title={title}/> : null }
-            { type === 'follower' ? <InstagramLogo modStyle={type} title={title} /> : null }
+            { type === 'newFrends' ? <InstagramLogo modStyle={type} title={title} /> : null }
 
             { type === 'media' ? <InstagramTool modStyle={modStyle}/> : null }
-            { type === 'follower' ? <InstagramTool modStyle={modStyle}/> : null }
+            { type === 'newFrends' ? <InstagramTool modStyle={modStyle}/> : null }
 
 
         </div>
