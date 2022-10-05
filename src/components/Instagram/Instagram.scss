@@ -1,8 +1,7 @@
 .instagram {
     width: 720px;
-    min-height: 696px;
+    min-height: 600px;
     border: solid 1px red;
-
     position: relative;
 
     &__container {
@@ -26,6 +25,11 @@
         &_type_profile {
             top: 14px;
             left: 98px;
+        }
+
+        &_type_newFrends {
+            left: 0;
+            bottom: 0;
         }
     }
 
