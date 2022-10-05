@@ -1,0 +1,28 @@
+.new-frends {
+    padding: 26px 24px 46px 24px;
+    width: 260px;
+    min-height: 268px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+
+        color: #2B2B2B;
+    }
+
+    &__span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #666666;
+    }
+}
