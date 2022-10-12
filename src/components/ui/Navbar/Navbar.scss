@@ -6,26 +6,26 @@
   line-height: 19px;
   opacity: 0.94;
 
-  &__text_theme_grey {
-      color: #333333;
-  }
-
-  &__text_theme_white {
-    color:#FFFFFF;
-  }
-
-  &__list{
+  &__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0 35px;
   }
 
-  &__el {
+  &__link {
     cursor: pointer;
-    
+
     &:hover {
-      opacity: 0.6;   
+      opacity: 0.6;
+    }
+
+    &_text_theme_grey {
+      color: #333333;
+    }
+
+    &_text_theme_white {
+      color: #FFFFFF;
     }
   }
 }
