@@ -24,7 +24,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ type, theme, title, size, width, icon=false }) => {
-    console.log(icon);
+    
     return(
         <button className={`${BUTTON_CLASS} ${BUTTON_CLASS}_theme_${theme} ${BUTTON_CLASS}__${type}`} style={{height: size, width: width}}>
             <span className={`${BUTTON_CLASS}__title`}>{title}</span>
