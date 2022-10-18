@@ -1,16 +1,20 @@
 import "./Select.scss";
 import { FC } from "react";
+import { NavbarOption } from "../Navbar/Navbar";
 
 const SELECT_CLASS: string = 'select';
+
+//Скоректировать тип для опций
 
 interface SelectProps {
     type: 'white' | 'grey',
     title: string,
     isOpen: boolean,
     onClick: () => void,
+    options?: NavbarOption[],
 }
 
-const Select: FC<SelectProps> = ({ type, title, onClick, isOpen }) => {
+const Select: FC<SelectProps> = ({ type, title, onClick, isOpen, options }) => {
     const selectList = isOpen
         ? `${SELECT_CLASS}__list ${SELECT_CLASS}__list_opened`
         : `${SELECT_CLASS}__list`;
@@ -28,26 +32,19 @@ const Select: FC<SelectProps> = ({ type, title, onClick, isOpen }) => {
             </div>
 
             <ul className={selectList}>
-                <li className={`${SELECT_CLASS}__item`}>
-                    <a 
-                        href="#"
-                        className={`${SELECT_CLASS}__link ${SELECT_CLASS}__link_text_theme_${type}`}
-                    >Tab 1</a>
-                </li>
-
-                <li className={`${SELECT_CLASS}__item`}>
-                    <a 
-                        href="#"
-                        className={`${SELECT_CLASS}__link ${SELECT_CLASS}__link_text_theme_${type}`}
-                    >Tab 2</a>
-                </li>
-
-                <li className={`${SELECT_CLASS}__item`}>
-                    <a 
-                        href="#"
-                        className={`${SELECT_CLASS}__link ${SELECT_CLASS}__link_text_theme_${type}`}
-                    >Tab 3</a>
-                </li>
+                {
+                    options && options.map((option, i) => {
+                        return (
+                            <li key={i} className={`${SELECT_CLASS}__item`}>
+                                <a
+                                    href={option.path}
+                                    className={`${SELECT_CLASS}__link ${SELECT_CLASS}__link_text_theme_${type}`}
+                                >{option.namePath}</a>
+                            </li>
+                        )
+                    })
+                }
+        
             </ul>
         </div>
     )
